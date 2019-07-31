@@ -30,7 +30,7 @@ public class BaseCalss {
 	@BeforeSuite
 	public void setUpSuite()
 	{
-		 excel=new ExcelDataProvider();
+		excel=new ExcelDataProvider();
 		 config=new ConfigDataProvider();
 		 ExtentHtmlReporter extent =new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/FB"+Helper.getCurrentDateTime()+".html"));
 		 report=new ExtentReports();
@@ -44,6 +44,7 @@ public class BaseCalss {
 	public void tearDown() {
 		BrowserFactory.quitBrowser(driver);
 	}
+	
 	@AfterMethod
 	public void tearDownMethod(ITestResult result) throws IOException 
 	{
