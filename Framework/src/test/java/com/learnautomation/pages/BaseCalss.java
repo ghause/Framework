@@ -39,15 +39,15 @@ public class BaseCalss {
 		 report=new ExtentReports();
 		 report.attachReporter(extent);
 	}
-	//@Parameters({"browser","urlToBeTested"})
+	@Parameters({"browser","urlToBeTested"})
 	@BeforeClass
-	//public void setUp(String browser, String urlToBeTested) 
-	public void setUp(){
+	public void setUp(String browser, String urlToBeTested) 
+	{
 		Reporter.log("Trying to start the browser and getting application ready");
 		
-		driver=BrowserFactory.startApp(driver, config.getBrowser(), config.getStringUrl()); //browser from 'ConfigDataProvider'
+		//driver=BrowserFactory.startApp(driver, config.getBrowser(), config.getStringUrl()); //browser from 'ConfigDataProvider'
 		
-		//driver=BrowserFactory.startApp(driver, browser, urlToBeTested); //browser from 'parameter'
+		driver=BrowserFactory.startApp(driver, browser, urlToBeTested); //browser from 'parameter'
 		
 		Reporter.log("Browser amd application is up and running");
 	}
