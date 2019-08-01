@@ -5,6 +5,7 @@
     <classes>
       <class name="com.learnautomation.testCases.LoginTestFB">
         <methods>
+          <include name="loginApp"/>
           <include name="setUpSuite"/>
           <include name="tearDown"/>
           <include name="tearDownMethod"/>

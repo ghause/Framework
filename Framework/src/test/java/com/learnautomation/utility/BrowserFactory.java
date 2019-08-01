@@ -23,7 +23,7 @@ public class BrowserFactory {
 		}
 		else if(browserName.equals("IE"))
 		{
-			System.setProperty("webdriver.ie.driver", "./path");
+			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
 		}
 		else 
