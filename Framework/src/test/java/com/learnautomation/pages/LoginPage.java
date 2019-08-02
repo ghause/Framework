@@ -9,15 +9,24 @@ public class LoginPage {
 	public LoginPage(WebDriver ldriver) {
 		this.driver=ldriver;
 	}
-	@FindBy(id="email") WebElement uname;
-	@FindBy(id="pass") WebElement passwd;
-	@FindBy(id="u_0_a") WebElement loginButton;
-	public void loginToFB(String usernameApp, String passwordApplicatio)
+	@FindBy(id="lid") WebElement uname;
+	@FindBy(id="pwd") WebElement passwd;
+	@FindBy(id="signin_submit") WebElement loginButton;
+	public void loginToFB(String usernameApp, String passwordApplicatio) 
 	
 	{
-		uname.sendKeys(usernameApp);
-		passwd.sendKeys(passwordApplicatio);
-		loginButton.click();
+		try
+		{
+			Thread.sleep(2000);
+			uname.sendKeys(usernameApp);
+			Thread.sleep(2000);
+			passwd.sendKeys(passwordApplicatio);
+			loginButton.click();
+		}
+		catch(Exception e){
+			System.out.println("login failed");
+			
+		}
 		
 	}
 
