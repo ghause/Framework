@@ -9,7 +9,7 @@ public class LogoutPage {
 //	public LogoutPage(WebDriver ldiver) {
 //		this.driver=ldiver;
 //	}
-	
+		
 	
 	@FindBy(id="ztb-profile-image") WebElement logOutIcon;
 	@FindBy(id="ztb-signout") WebElement signOutBtn;
