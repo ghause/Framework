@@ -49,7 +49,7 @@ public class BaseCalss {
 		
 		driver=BrowserFactory.startApp(driver, browser, urlToBeTested); //browser from 'parameter'
 		
-		Reporter.log("Browser amd application is up and running");
+		Reporter.log("Browser and application is up and running fine");
 	}
 	@AfterClass
 	public void tearDown() {
