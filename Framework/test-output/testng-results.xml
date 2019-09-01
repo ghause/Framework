@@ -5,33 +5,33 @@
       <![CDATA[Trying to start the browser and getting application ready]]>
     </line>
     <line>
-      <![CDATA[Browser amd application is up and running]]>
+      <![CDATA[Browser and application is up and running fine]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="192683" started-at="2019-08-01T19:02:49Z" finished-at="2019-08-01T19:06:01Z">
+  <suite name="Default suite" duration-ms="38317" started-at="2019-08-30T06:52:42Z" finished-at="2019-08-30T06:53:20Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="192683" started-at="2019-08-01T19:02:49Z" finished-at="2019-08-01T19:06:01Z">
+    <test name="Default test" duration-ms="38317" started-at="2019-08-30T06:52:42Z" finished-at="2019-08-30T06:53:20Z">
       <class name="com.learnautomation.testCases.LoginTestFB">
-        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="setUpSuite" is-config="true" duration-ms="832" started-at="2019-08-01T19:02:48Z" finished-at="2019-08-01T19:02:49Z">
+        <test-method status="PASS" signature="setUpSuite()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="setUpSuite" is-config="true" duration-ms="782" started-at="2019-08-30T06:52:41Z" finished-at="2019-08-30T06:52:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="setUp" is-config="true" duration-ms="77879" started-at="2019-08-01T19:02:49Z" finished-at="2019-08-01T19:04:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="setUp" is-config="true" duration-ms="18653" started-at="2019-08-30T06:52:42Z" finished-at="2019-08-30T06:53:01Z">
           <reporter-output>
             <line>
               <![CDATA[Trying to start the browser and getting application ready]]>
             </line>
             <line>
-              <![CDATA[Browser amd application is up and running]]>
+              <![CDATA[Browser and application is up and running fine]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="loginApp" duration-ms="113676" started-at="2019-08-01T19:04:07Z" finished-at="2019-08-01T19:06:00Z">
+        <test-method status="PASS" signature="loginApp()[pri:1, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="loginApp" duration-ms="4750" started-at="2019-08-30T06:53:01Z" finished-at="2019-08-30T06:53:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDownMethod" is-config="true" duration-ms="478" started-at="2019-08-01T19:06:00Z" finished-at="2019-08-01T19:06:01Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDownMethod" is-config="true" duration-ms="1092" started-at="2019-08-30T06:53:06Z" finished-at="2019-08-30T06:53:07Z">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="logoutApp()[pri:2, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="logoutApp" duration-ms="3" started-at="2019-08-01T19:06:01Z" finished-at="2019-08-01T19:06:01Z">
+        <test-method status="PASS" signature="logoutApp()[pri:2, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="logoutApp" duration-ms="12815" started-at="2019-08-30T06:53:07Z" finished-at="2019-08-30T06:53:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutApp -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDownMethod" is-config="true" duration-ms="87" started-at="2019-08-01T19:06:01Z" finished-at="2019-08-01T19:06:01Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDownMethod" is-config="true" duration-ms="191" started-at="2019-08-30T06:53:19Z" finished-at="2019-08-30T06:53:20Z">
           <params>
             <param index="0">
               <value>
@@ -57,11 +57,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDown" is-config="true" duration-ms="552" started-at="2019-08-01T19:06:01Z" finished-at="2019-08-01T19:06:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testCases.LoginTestFB@6093dd95]" name="tearDown" is-config="true" duration-ms="777" started-at="2019-08-30T06:53:20Z" finished-at="2019-08-30T06:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.learnautomation.testCases.LoginTestFB -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
