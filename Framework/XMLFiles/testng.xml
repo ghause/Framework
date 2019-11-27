@@ -4,8 +4,10 @@
 <listeners>
         <listener class-name="com.learnautomation.utility.RetryListenerClass"/>
   </listeners>
+<!--
  <parameter name="browser" value="Chrome"/>
  <parameter name="urlToBeTested" value="http://mail.integramicro.co.in/bizmail/login"/>
+-->
   <test name="Test">
     <classes>
       <class name="com.learnautomation.testCases.LoginTest"/>
