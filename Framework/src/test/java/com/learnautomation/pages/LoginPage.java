@@ -1,18 +1,19 @@
 package com.learnautomation.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
-	WebDriver driver;
-	public LoginPage(WebDriver ldriver) {
-		this.driver=ldriver;
-	}
-	@FindBy(id="lid") WebElement uname;
-	@FindBy(id="pwd") WebElement passwd;
-	@FindBy(id="signin_submit") WebElement loginButton;
-	public void loginToFB(String usernameApp, String passwordApplicatio) 
+//	WebDriver driver;
+//	public LoginPage(WebDriver ldriver) {
+//		this.driver=ldriver;
+//	}
+	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='login_username']") WebElement uname;
+	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='secretkey']") WebElement passwd;
+	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@value='Login >>']") WebElement loginButton;
+	
+	
+	public void loginToFB(String usernameApp, String passwordApplication) throws InterruptedException 
 	
 	{
 		try
@@ -20,13 +21,18 @@ public class LoginPage {
 			Thread.sleep(2000);
 			uname.sendKeys(usernameApp);
 			Thread.sleep(2000);
-			passwd.sendKeys(passwordApplicatio);
+			passwd.sendKeys(passwordApplication);
 			loginButton.click();
+			Thread.sleep(2000);
 		}
-		catch(Exception e){
+		catch(Exception e)
+		{
 			System.out.println("login failed");
+			Thread.sleep(2000);
 			
 		}
+		
+		
 		
 	}
 

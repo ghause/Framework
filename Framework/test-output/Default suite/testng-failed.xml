@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnautomation.testCases.LoginTestFB">
+      <class name="com.learnautomation.testCases.LoginTest">
         <methods>
-          <include name="loginApp"/>
+          <include name="login"/>
+          <include name="setUpSuite"/>
           <include name="tearDown"/>
+          <include name="tearDownSuite"/>
+          <include name="tearDownMethod"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.learnautomation.testCases.LoginTestFB -->
+      </class> <!-- com.learnautomation.testCases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

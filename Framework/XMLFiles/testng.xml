@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite  name="Suite">
+<listeners>
+        <listener class-name="com.learnautomation.utility.RetryListenerClass"/>
+  </listeners>
+ <parameter name="browser" value="Chrome"/>
+ <parameter name="urlToBeTested" value="http://mail.integramicro.co.in/bizmail/login"/>
   <test name="Test">
     <classes>
-      <class name="com.learnautomation.testCases.LoginTestFB"/>
+      <class name="com.learnautomation.testCases.LoginTest"/>
+      <class name="com.learnautomation.testCases.LoginLogoutTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
