@@ -51,6 +51,7 @@ public class BaseCalss {
 		 report.setSystemInfo("Tester Name", "Azam");
 		 report.setSystemInfo("Browser Name", "Chrome");
 		 
+		 
 	}
 	@Parameters({"browser","urlToBeTested"})
 	@BeforeClass
