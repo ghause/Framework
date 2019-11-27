@@ -10,7 +10,7 @@ public class LoginPage {
 //	}
 	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='login_username']") WebElement uname;
 	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='secretkey']") WebElement passwd;
-	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@value='Login >>']") WebElement loginButton;
+	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@value='Login1 >>']") WebElement loginButton;
 	
 	
 	public void loginToFB(String usernameApp, String passwordApplication) throws InterruptedException 

@@ -16,7 +16,7 @@ public class LoginTest extends BaseCalss{
 		test.info("Starting Applicaton");
 		loginPage.loginToFB(excel.getStringData("Login", 0, 0)+"", excel.getStringData("Login", 0, 1));
 		test.pass("Login success");
-		Assert.assertTrue(1<0);
+		//Assert.assertTrue(1<0);
 	}
 
 }
