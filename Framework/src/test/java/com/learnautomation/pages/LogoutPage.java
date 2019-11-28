@@ -22,7 +22,7 @@ public class LogoutPage {
 		} 
 		catch (Exception e) 
 		{
-			System.out.println("login failed");
+			System.out.println("logout failed");
 		}
 		
 	}
