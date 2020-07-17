@@ -13,7 +13,7 @@ public class BrowserFactory {
 	{
 		if(browserName.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
 			driver=new ChromeDriver();
 		}
 		else if(browserName.equals("Firefox"))
