@@ -12,7 +12,6 @@ public class BrowserFactory {
 	public static WebDriver startApp(WebDriver driver, String browserName, String appURL)
 	{
 		if(browserName.equals("Chrome"))
-			
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
 			driver=new ChromeDriver();
