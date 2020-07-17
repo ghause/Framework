@@ -8,6 +8,7 @@ public class LoginPage {
 //	public LoginPage(WebDriver ldriver) {
 //		this.driver=ldriver;
 //	}
+	
 	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='login_username']") WebElement uname;
 	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@name='secretkey']") WebElement passwd;
 	@FindBy(xpath="//tbody[tr[td[input[@type='checkbox']]]]/tr/td/input[@value='Login >>']") WebElement loginButton;
