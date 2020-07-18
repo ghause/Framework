@@ -2,6 +2,8 @@ package com.learnautomation.pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -55,7 +57,7 @@ public class BaseCalss {
 	}
 	@Parameters({"browser","urlToBeTested"})
 	@BeforeClass
-	public void setUp(String browser, String urlToBeTested) 
+	public void setUp(String browser, String urlToBeTested) throws MalformedURLException, InterruptedException 
 	{
 		Reporter.log("Trying to start the browser and getting application ready");
 		

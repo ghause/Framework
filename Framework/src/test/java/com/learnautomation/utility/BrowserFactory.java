@@ -1,22 +1,42 @@
 package com.learnautomation.utility;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowserFactory {
 
-	public static WebDriver startApp(WebDriver driver, String browserName, String appURL)
+	public static WebDriver startApp(WebDriver driver, String browserName, String appURL) throws MalformedURLException, InterruptedException
 	
 	
 	{
 		if(browserName.equals("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
-			driver=new ChromeDriver();
+//			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
+//			driver=new ChromeDriver();
+			DesiredCapabilities cap =new DesiredCapabilities();
+			cap.setBrowserName("chrome");
+			cap.setPlatform(Platform.WINDOWS);
+			
+			//chrome option definition
+			
+			ChromeOptions options =new ChromeOptions();
+			options.merge(cap);
+			String hubUrl= "http://192.168.1.5:4444/wd/hub";
+			driver=new RemoteWebDriver(new URL(hubUrl), options);
+			driver.get("https://www.selenium.dev/downloads/");
+			System.out.println(driver.getTitle());
+			Thread.sleep(5000);
+			//driver.close(); 
 		}
 		else if(browserName.equals("Firefox"))
 		{
