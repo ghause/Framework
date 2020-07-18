@@ -21,22 +21,21 @@ public class BrowserFactory {
 	{
 		if(browserName.equals("Chrome"))
 		{
-//			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
-//			driver=new ChromeDriver();
-			DesiredCapabilities cap =new DesiredCapabilities();
-			cap.setBrowserName("chrome");
-			cap.setPlatform(Platform.WINDOWS);
+			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
+			driver=new ChromeDriver();
 			
-			//chrome option definition
-			
-			ChromeOptions options =new ChromeOptions();
-			options.merge(cap);
-			String hubUrl= "http://192.168.1.5:4444/wd/hub";
-			driver=new RemoteWebDriver(new URL(hubUrl), options);
-			driver.get("https://www.selenium.dev/downloads/");
-			System.out.println(driver.getTitle());
-			Thread.sleep(5000);
-			//driver.close(); 
+			//Grid setup
+//			DesiredCapabilities cap =new DesiredCapabilities();
+//			cap.setBrowserName("chrome");
+//			cap.setPlatform(Platform.WINDOWS);
+//			
+//			//chrome option definition
+//			
+//			ChromeOptions options =new ChromeOptions();
+//			options.merge(cap);
+//			String hubUrl= "http://192.168.1.5:4444/wd/hub";
+//			driver=new RemoteWebDriver(new URL(hubUrl), options);
+			 
 		}
 		else if(browserName.equals("Firefox"))
 		{
